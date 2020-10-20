@@ -1,14 +1,14 @@
 <?php
 
-namespace RichBrains\Bundles\CoreBundle\Command;
+namespace Bundles\CoreBundle\Command;
 
 use PHPExcel_IOFactory;
 use PHPExcel_Worksheet;
 use Propel;
-use RichBrains\Bundles\CoreBundle\Model\Applications\ApplicationQuery;
-use RichBrains\Bundles\CoreBundle\Model\Others\Company;
-use RichBrains\Bundles\CoreBundle\Model\Others\CountryQuery;
-use RichBrains\Bundles\CoreBundle\Model\Students\UserQuery;
+use Bundles\CoreBundle\Model\Applications\ApplicationQuery;
+use Bundles\CoreBundle\Model\Others\Company;
+use Bundles\CoreBundle\Model\Others\CountryQuery;
+use Bundles\CoreBundle\Model\Students\UserQuery;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
