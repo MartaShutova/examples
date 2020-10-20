@@ -9,6 +9,7 @@ $phpWord->setDefaultFontName('Tahoma');
 $phpWord->setDefaultFontSize(14);
 $image_path = array();
 $db = getDB();
+
 if($article_id && $article_id != 0 && isset($_SESSION['user_id']) && $_SESSION['user_id']!=0) {
     $stat = $db->prepare("insert into article_stat (article_id, user_id, article_stat_type_id, \"date\") VALUES (:aid, :uid, 3, :dat);");
     $stat->bindParam(':uid', $_SESSION['user_id']);
